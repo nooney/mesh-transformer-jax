@@ -21,11 +21,12 @@
 
   "tpu_size": 8,
 
-  "bucket": "nlp-gpt-j-bucket",
+  "bucket": "gpt-bbc",
   "model_dir": "musk_checkpoints",
   
-  "val_set": "musk.val.index",
+  "val_set": {},
   "train_set": "musk.train.index",
+  "eval_harness_tasks": [],
 
   "val_batches": 1,
   "val_every": 50,
