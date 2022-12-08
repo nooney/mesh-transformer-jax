@@ -19,7 +19,7 @@
     "weight_decay": 0.1,
     "total_steps": 5000,
   
-    "tpu_size": 256,
+    "tpu_size": 8,
   
     "bucket": "gpt-bbc",
     "model_dir": "bbc_news_topics",
