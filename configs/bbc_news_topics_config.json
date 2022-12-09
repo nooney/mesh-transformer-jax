@@ -25,8 +25,8 @@
     "model_dir": "bbc_news_topics",
   
     "train_set": "bbc_news_topics.train.index",
-    "val_set": "bbc_news_topics.val.index",
-  
+    "val_set": {"starfruit": "bbc_news_topics.val.index"},
+      
     "eval_harness_tasks": [
       "lambada",
       "piqa",
