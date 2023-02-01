@@ -28,12 +28,7 @@
     "val_set": {"starfruit": "bbc_news_topics.val.index"},
       
     "eval_harness_tasks": [
-      "lambada",
-      "piqa",
-      "hellaswag",
-      "winogrande",
-      "mathqa",
-      "pubmedqa"
+      "arc_easy"
     ],
   
     "val_batches": 36057,
