@@ -1,0 +1,42 @@
+{
+    "layers": 28,
+    "d_model": 4096,
+    "n_heads": 16,
+    "n_vocab": 50400,
+    "norm": "layernorm",
+    "pe": "rotary",
+    "pe_rotary_dims": 64,
+  
+    "seq": 4000,
+    "cores_per_replica": 8,
+    "per_replica_batch": 1,
+    "gradient_accumulation_steps": 32, 
+
+    "warmup_steps": 10,
+    "anneal_steps": 190,
+    "lr": 1.2e-4,
+    "end_lr": 1.2e-5,
+    "weight_decay": 0.1,
+    "total_steps": 200,
+  
+    "tpu_size": 8,
+  
+    "bucket": "gpt-bbc",
+    "model_dir": "bbc_news_islegal",
+  
+    "train_set": "bbc_news_islegal.train.index",
+    "val_set": {"datalab": "bbc_news_islegal.val.index"},
+      
+    "eval_harness_tasks": [
+      "arc_easy"
+    ],
+  
+    "val_batches": 182,
+    "val_every": 500,
+    "ckpt_every": 500,
+    "keep_every": 10000,
+  
+    "name": "GPT-BBC-News-Topics",
+    "wandb_project": "mesh-transformer-jax",
+    "comment": ""
+  }
